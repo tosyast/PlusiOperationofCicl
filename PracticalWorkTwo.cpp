@@ -32,14 +32,14 @@ int main()
             std::cout << "Число отрицательное";
             cout << "\n";
         }
-        if (number > 0) {
+        if (number >= 0) {
             for ( int i = 2; i <= sqrt(number); i++) {
                 if (number % i == 0) {
                     f = false;
                    break;
                 }
             }
-            if (f == true) {
+            if (f == true and Console != "End") {
                 std::cout << "Число простое";
                 sum += number;
                 cout << "\n";
@@ -48,9 +48,9 @@ int main()
         std::cout << "----------";
         cout << "\n";
         if (Console == "End") {
-            std::cout << "Сумма простых чисел:";
+            std::cout << "Сумма простых чисел:" << sum;
             cout << "\n";
-            std::cout << sum;
+            
         }
         
 
